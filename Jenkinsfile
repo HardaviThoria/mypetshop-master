@@ -1,4 +1,4 @@
-@Library('jenkins-global-pipeline-lib-1.1') _
+@Library('jenkins-global-pipeline-lib-1.1@main') _
 
 InfraWorkflow(
     accountName: "petshop",
