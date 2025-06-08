@@ -1,5 +1,3 @@
-@Library('jenkins-global-pipeline-lib@1.1') _
-
 pipeline {
     agent any
     
