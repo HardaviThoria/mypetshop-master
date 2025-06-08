@@ -6,8 +6,9 @@ resource "aws_s3_bucket" "petshop_bucket" {
   bucket = "mypetshop-terraform-bucket"  # Change this to a unique bucket name
   
   tags = {
-    Environment = "Dev"
+    Environment = "Development"
     Project     = "MyPetShop"
+    Branch      = "development"
   }
 }
 
