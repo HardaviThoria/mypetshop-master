@@ -1,3 +1,27 @@
+@Library('jenkins-global-pipeline-lib-1.1') _
+
+InfraWorkflow(
+    accountName: "petshop",
+    awsRegion: "us-west-2",
+    canonicalName: "petshop-",
+    key: "app",
+    deploy_network_stack: "true",
+    deploy_application_stack: "true",
+    deploy_application: "true",
+    deploy_grrepo: "false",
+    deploy_grstats: "false",
+    deploy_jobserver: "false",
+    deploy_license: "false",
+    deploy_grweb: "false",
+    deploy_dwh: "false",
+    certificate_arn: "",
+    is_destroy: "false",
+    is_dr: "false",
+    dr_rds_writer: "",
+    dr_rds_reader: "",
+    dr_rds_password: ""
+)
+
 pipeline {
     agent any
     

@@ -1,3 +1,34 @@
+# Jenkins Global Pipeline Library
+
+This is a shared Jenkins pipeline library that contains reusable pipeline components for Terraform deployments.
+
+## Usage
+
+To use this library in your Jenkinsfile:
+
+```groovy
+@Library('jenkins-global-pipeline-lib@1.1') _
+
+terraformPipeline()
+```
+
+## Available Functions
+
+### terraformPipeline
+
+A pipeline for Terraform deployments that includes:
+- Terraform initialization
+- Plan creation
+- Approval step (on main branch)
+- Apply step (on main branch)
+
+## Requirements
+
+- Jenkins with Pipeline plugin
+- Git plugin
+- Terraform installed on Jenkins agent
+- AWS credentials configured in Jenkins
+
 # MyPetShop
 My pet shop project
 
